@@ -1,7 +1,8 @@
 node_modules
+coverage
 
 .env*
 !.env.example
 
 .vscode/*
-!.vscode/settings.json
+!.vscode/settings.jsonS
