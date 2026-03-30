@@ -35,6 +35,7 @@ backend-template/
 │   │       ├── example.controller.ts
 │   │       ├── example.service.ts
 │   │       ├── example.schema.ts
+│   │       ├── example.test.ts     # Co-located unit test
 │   │       └── example.types.ts
 │   │
 │   ├── services/
@@ -44,7 +45,7 @@ backend-template/
 │   └── types/
 │       └── express.d.ts  # Extend Express Request
 │
-├── tests/                # Integration tests
+├── tests/                # Integration tests (global)
 │   └── example.test.ts
 │
 ├── .env.example
