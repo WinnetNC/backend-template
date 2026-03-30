@@ -9,6 +9,6 @@ export const verifyAuthToken = async (token: string): Promise<AuthUser> => {
     throw new Error('No token provided')
   }
 
-  // 🔥 Template placeholder
-  throw new Error('verifyAuthToken not implemented')
+  // minimal placeholder
+  return { id: 'demo-user' }
 }

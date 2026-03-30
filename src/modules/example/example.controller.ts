@@ -1,5 +1,15 @@
-import type { Request, Response } from 'express'
+import { Request, Response, NextFunction } from 'express'
+import * as service from './example.service'
 
-export const getExample = (_req: Request, res: Response) => {
-  res.json({ message: 'Hello from example module' })
+export const getExample = async (
+  _req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const data = await service.getExample()
+    res.json(data)
+  } catch (err) {
+    next(err)
+  }
 }

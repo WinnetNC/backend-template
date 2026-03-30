@@ -1,25 +1,24 @@
 import { Request, Response, NextFunction } from 'express'
 import { verifyAuthToken } from '@/services/auth/auth.service'
-import { AppError } from '@/utils/AppError'
 
 export const authMiddleware = async (
   req: Request,
-  _res: Response,
+  res: Response,
   next: NextFunction
 ) => {
   const authHeader = req.headers.authorization
 
-  if (!authHeader?.startsWith ('Bearer ')) {
-    return next(new AppError('Unauthorized', 401))
+  if (!authHeader?.startsWith('Bearer ')) {
+    return res.status(401).json({ message: 'Unauthorized' })
   }
 
-  const token = authHeader.split(' ')[1]
-
   try {
+    const token = authHeader.split(' ')[1]
     const user = await verifyAuthToken(token)
+
     req.user = user
     next()
   } catch {
-    next(new AppError('Invalid token', 401))
+    res.status(401).json({ message: 'Invalid token' })
   }
 }
