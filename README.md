@@ -5,7 +5,7 @@
 A minimal, scalable backend template built with **Node.js, Express, and TypeScript**.
 Designed for clean structure, fast setup, and easy extension.
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```
 backend-template/
@@ -56,7 +56,7 @@ backend-template/
 └── LICENSE
 ```
 
-## ⚙️ Tech Stack
+### ⚙️ Tech Stack
 
 - Node.js + Express
 - TypeScript
@@ -66,7 +66,7 @@ backend-template/
 - ESLint (linting)
 - GitHub Actions (CI)
 
-## ✨ Features
+### ✨ Features
 
 - Minimal, modular architecture
 - Feature-based structure (`modules/`)
@@ -77,7 +77,7 @@ backend-template/
 - Type-safe Express extensions
 - CI pipeline (lint, build, test)
 
-## 📦 Use Cases
+### 📦 Use Cases
 
 - REST APIs
 - SaaS backends
@@ -85,7 +85,7 @@ backend-template/
 - Backend for frontend (BFF)
 - Starter for production systems
 
-## 🚀 Scripts
+### 🚀 Scripts
 
 ```json
 {
@@ -101,14 +101,14 @@ backend-template/
 }
 ```
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 🧪 Testing
+### 🧪 Testing
 
 Run tests:
 
@@ -118,7 +118,7 @@ npm run test:run
 
 Coverage is generated in CI.
 
-## 🚀 Deployment (Optional)
+### 🚀 Deployment (Optional)
 
 This template does not include deployment configuration by default.
 
@@ -132,7 +132,7 @@ Recommended:
 
 CI ensures linting, build, and tests pass before merging.
 
-## 💡 Notes
+### 💡 Notes
 
 - Use path aliases like `@/modules/...`
 - `.env` files control environment-specific configuration
