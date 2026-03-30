@@ -8,6 +8,8 @@ app.use(express.json())
 
 app.use('/api/example', exampleRoutes)
 
+
+
 app.use(errorHandler)
 
 export default app

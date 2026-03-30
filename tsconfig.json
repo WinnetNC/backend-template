@@ -14,10 +14,10 @@
 
     "esModuleInterop": true,
     "strict": true,
-    "skipLibCheck": true,
+    "skipLibCheck":  true,
     "verbatimModuleSyntax": false
     },
-    "include": ["src", "tsconfig.json", "jest.config.ts", "utils", "app.ts", "server.ts", "modules", "middleware", "db", "config"],     
-    "exclude": ["node_modules", "dist", "tests"]
+    "include": ["src"],     
+    "exclude": ["node_modules", "dist"]
   
 }
