@@ -2,8 +2,6 @@
 
 ## 🚀 Backend Template
 
---
-
 A minimal, scalable backend template built with **Node.js, Express, and TypeScript**.
 Designed for clean structure, fast setup, and easy extension.
 
